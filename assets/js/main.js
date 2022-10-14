@@ -204,15 +204,10 @@
 						$t._update();
 					}).trigger('resize');
 
-					// var maxHeight = 0;
-
-					// $(".slide-boxes").each(function () {
-					// 	if ($(this).height() > maxHeight) {
-					// 		maxHeight = $(this).height();
-					// 	}
-					// });
-
-					// $(".slide-boxes").height(maxHeight);
+					// image opener
+					$('.proj-image').on('click', function(){
+						window.open($(this).attr('src'));
+					});
 
 				});
 
